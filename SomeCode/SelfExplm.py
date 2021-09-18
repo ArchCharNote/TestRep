@@ -47,15 +47,27 @@ class Human:
     def __init__(self):
         self.blood = 7000
 
+
     def add_blood(self, volume):
         self.blood += volume
+
 xxx = Human()
+xxx.add_blood(2000)
+xxx.r = 12
+xxx.o = 12
 print(xxx.blood)
 Human.add_blood(xxx,1000)
 print(xxx.blood)
-Human.add_blood(xxx,1000)
+Human.add_blood(xxx,2000)
 print(xxx.blood)
+xxx.add_blood(2000)
+print(xxx.blood)
+print(xxx.r)
+print(xxx.__dict__)
 # Human.blood
+
+# for att in dir(xxx):
+#     print (att, getattr(xxx,att))
 
 class Point:
     pass
